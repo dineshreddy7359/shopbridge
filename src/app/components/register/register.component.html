@@ -1,0 +1,40 @@
+<!-- <p>register works!</p> -->
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="register-card card">
+            <div class="card-header text-center">
+                <h5>Sign up</h5>
+            </div>
+            <div class="card-body">
+                <form #signupForm="ngForm" (ngSubmit)="signup()">
+                    <div class="form-group">
+                        <label for="username">Name <span class="red">*</span></label>
+                        <input id="username" type="text" class="form-control" name="name" [ngClass]="{'is-invalid': name.touched && name.invalid}" #name="ngModel" [(ngModel)]="model.name" required />
+                        <span class="invalid-feedback">Name required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EmailId <span class="red">*</span></label>
+                        <input id="email" type="text" class="form-control" name="email" [ngClass]="{'is-invalid': email.touched && email.invalid}" #email="ngModel" [(ngModel)]="model.email" required />
+                        <span class="invalid-feedback">Email Id required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">UserName <span class="red">*</span></label>
+                        <input id="username" type="text" class="form-control" name="username" [ngClass]="{'is-invalid': username.touched && username.invalid}" #username="ngModel" [(ngModel)]="model.username" required />
+                        <span class="invalid-feedback">User Name required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password <span class="red">*</span></label>
+                        <input id="password" type="password" class="form-control" name="password" [ngClass]="{'is-invalid': password.touched && password.invalid}" #password="ngModel" [(ngModel)]="model.password" required />
+                        <span class="invalid-feedback">Password required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirm Password <span class="red">*</span></label>
+                        <input id="password" type="password" class="form-control" name="confirmPassword" [ngClass]="{'is-invalid': confirmPassword.touched && confirmPassword.invalid}" #confirmPassword="ngModel" [(ngModel)]="model.confirmPassword" required />
+                        <span class="invalid-feedback">Confirm Password required</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" [disabled]="signupForm.invalid">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

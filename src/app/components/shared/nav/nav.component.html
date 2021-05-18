@@ -1,0 +1,15 @@
+<!-- <p>nav works!</p> -->
+<div class="d-flex flex-column flex-md-row align-items-center p-3 mb-4 border-bottom">
+    <app-header></app-header>
+
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <!-- <a class="my-3 p-2 text-dark text-decoration-none" href="javascript:0">Shipping & Delivery</a>
+        <a class="my-3 p-2 text-dark text-decoration-none" href="javascript:0">Payments & Pricing</a>
+        <a class="my-3 p-2 text-dark text-decoration-none" href="javascript:0">Returns & Refunds</a>
+        <a class="my-3 p-2 text-dark text-decoration-none" href="javascript:0">Customer Service</a> -->
+    </nav>
+
+    <a class="p-2 ml-6 btn btn-outline-primary" *ngIf="isAuthorisedUser" (click)="userLogout()">Logout</a>
+    <a class="p-2 ml-6 btn btn-outline-primary" *ngIf="!isAuthorisedUser" [routerLink]="['/login']">Login</a>
+    <a class="p-2 ml-10 btn btn-outline-secondary" [routerLink]="['/register']">Sign up</a>
+</div>

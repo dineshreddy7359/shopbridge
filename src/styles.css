@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+.ml-2 {
+    margin-left: 2px !important;
+}
+.ml-4 {
+    margin-left: 4px !important;
+}
+.ml-6 {
+    margin-left: 6px !important;
+}
+.ml-8 {
+    margin-left: 8px !important;
+}
+.ml-10 {
+    margin-left: 10px !important;
+}
+
+.mr-2 {
+    margin-left: 2px !important;
+}
+.mr-4 {
+    margin-left: 4px !important;
+}
+.mr-6 {
+    margin-left: 6px !important;
+}
+.mr-8 {
+    margin-left: 8px !important;
+}
+.mr-10 {
+    margin-left: 10px !important;
+}
+
+.cart-item {
+    font-size: small;
+}
+
+.filters {
+    font-size: small;
+}
+
+.card, .form-control, .btn {
+    border-radius: 0;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.product-btn {
+    font-size: small;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.fa-heart {
+    color: palevioletred;
+    cursor: pointer;
+}
+
+.login-card h5, .register-card h5 {
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.login-card label, .register-card label {
+    font-size: small;
+}
+
+.red {
+    color: red;
+}
